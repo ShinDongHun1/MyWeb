@@ -743,7 +743,7 @@ ul.aside-menu-list li a:hover:after{
 	float:left;
 	padding:0;
 	color:lightgray;
-	font-size:1.5vw;
+	font-size:0.8rem;
 	transition: 0.4s;
 	line-height:20px;
 	width:0px;
