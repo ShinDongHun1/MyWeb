@@ -566,7 +566,7 @@ ul.aside-menu-list li a:hover:after{
 	text-align:center;
 	margin-top:20px;
 	padding:0;
-	z-index:0;
+	z-index:0;/* 이거 2로 하면 아이콘 색깔 진해짐!!!!*/
 	}
 	ul.aside-menu-list li a .aside-content{
 		width:100%;
@@ -615,12 +615,14 @@ ul.aside-menu-list li a:hover:after{
 @media all and (max-width:767px){/*모바일* 320~480이나 그사이도 하려고*/
 	.aside-menu{
 	position:relative;
-	width:100%;
+	width:90%;
 	height:20%;
-	margin:0;
+
 	padding:0;
 	left:0;
 	transition:all 0.5s ease;
+		  margin-left: auto;
+    margin-right: auto;
 
 	}
 
@@ -634,9 +636,11 @@ ul.aside-menu-list li a:hover:after{
 	text-align:center;/*가운데 정렬*/
 	margin:5px;
 		transition:all 0.5s ease;
+		 
 	}
 	
 	ul.aside-menu-list li{
+		
 	display:block;
 	transition: all 0.3s ease;
 	flex-direction:column;
@@ -644,39 +648,49 @@ ul.aside-menu-list li a:hover:after{
 	list-style:none;
 	font-size:7px;
 	font-family:고딕;
-	margin:0px;
+	  margin-left: auto;
+    margin-right: auto;
 	text-align:center;/*가운데 정렬*/
 	width:100%;
-	height:40vh;
+	height:45vh;
 	justify-content:center;
 	margin-bottom:3rem;
-	padding-top:5%;
-			transition:all 0.5s ease;
+	transition:all 0.5s ease;
+	border: solid 1px rgba(144, 144, 144, 0.25);
+	background-color: #fff;
+ 	box-sizing:border-box;
 	
 	}
 	ul.aside-menu-list li a {
+	box-sizing:border-box;
 	text-decoration:none;
 	width:100%;
 	height:100%;
 	display:flex;
 	flex-direction:column;
-	text-align:left;/*가운데 정렬*/
 	font-size:0.8rem;
 	font-family:고딕;
-	text-align:center;
-	margin-top:20px;
-	padding:0;
+	text-align:center;/*가운데정렬*/
+	margin-top:2rem;
+	
 	}
 	ul.aside-menu-list li a .aside-content{
 		width:100%;
-		color:black;
+		font-family: "Raleway", Helvetica, sans-serif;
+		color:#858585;
+		font-weight: 500;
+		margin:1em 0;
 	}
 	ul.aside-menu-list li a  span{
+		
 		font-weight:border;
 		text-align:center;
-	font-size:1.25rem;
-		font-weight:500;
+		font-weight: 700;
 		margin-bottom:15px;
+		color: #858585;
+		font-size: 1.7em;
+    line-height: 1.5em;
+
 	
 	}
 	ul.aside-menu-list li:nth-child(1) a .fa{
