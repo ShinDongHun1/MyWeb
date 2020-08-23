@@ -108,3 +108,14 @@ function changeMenuColor(){
 	}
 }
 window.addEventListener('scroll', changeMenuColor );
+
+let searchBox=document.getElementsByClassName("search-box");
+function closeSearchText(){
+	let searchTxt=document.getElementsByClassName("search-txt");
+	searchTxt[0].style.width='20px';
+}
+
+window.addEventListener('onclick', closeSearchText );
+		
+	
+
