@@ -80,5 +80,14 @@ input[id="menuicon"]:checked +label ~ .main-section{
 input[id="menuicon"]:checked +label ~ .aside-menu{
   left:55%;
 }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {/*아이패드*/
+	input[id="menuicon"]:checked +label ~ .main-section{
+  left:0;
+  
+}
+	input[id="menuicon"]:checked +label ~ .aside-menu{
+  left:0;
+}
+}
 
 

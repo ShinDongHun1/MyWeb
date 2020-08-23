@@ -71,9 +71,56 @@ body{
         margin-bottom: 0.5rem;
         padding-bottom: 0;
 		}
-	
+	.main-section:after{
+	background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    content: ' ';
+    display: block;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+	left:0;
+    width: 100%;
+	transition:all 0.6 ease;
+    z-index: 1;
+	}
 
 }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {/*아이패드*/
+/* Styles */
+	.main-section{
+		display:flex;
+		position:relative;
+		width:100%;
+		height:100vh;
+		margin-top:0;
+		left:0; /*왼쪽 nav 공간 띄어주기*/
+		top:5%;
+		flex-direction:column;
+		justify-content: center;
+		transition: all 0.5s ease;
+	
+		}
+	
+
+		.main-section h1{
+		display:none;
+		transition: all 0.5s ease;
+		}
+	.main-section:after{
+		background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  transition:all 0.5s ease;
+	}
+}
+
 #main-img{
 	width:70%;
 	height:100%;
@@ -93,22 +140,20 @@ transition:all 0.5s ease;
 	margin:0 auto;
 		transition:all 0.5s ease;
 }
-	.main-section:after{
-	background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
-    content: ' ';
-    display: block;
-    height: 100%;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-	left:0;
-    width: 100%;
-	transition:all 0.6 ease;
-    z-index: 1;
-	}
+	
 
 }
-
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {/*아이패드*/
+		#main-img{
+		position:relative;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	display:block;
+	margin:0 auto;
+	transition:all 0.5s ease;
+}
+}
 .menu-nav .main-logo-box a{
 	display:block;
 	color: black;
@@ -119,7 +164,7 @@ transition:all 0.5s ease;
     font-weight: normal;
     font-size: 2vw;/*35px*/
     line-height: .8;
-    font-family: "Abril Fatface", cursive;
+    font-family: "Arial", cursive;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -177,6 +222,23 @@ transition:all 0.5s ease;
     transition: all 0.5s ease;
     overflow-y: hidden;
 	border-right: 1px solid #e6e6e6;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {/*아이패드*/
+.menu-nav{
+	display: block;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    font-size: 15px;
+    top: 0;
+	margin-top:0;
+    left: -30%;
+    transition: all 0.5s ease;
+    overflow-y: hidden;
+	border-right: 1px solid #e6e6e6;
+	background:white;
+	z-index:3;
 	}
 }
 
@@ -469,8 +531,109 @@ ul.aside-menu-list li a:hover:after{
 	content:'';
 	
 }
-	
 
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {/*아이패드*/
+	.aside-menu{
+	position:absolute;
+	width:100%;
+	height:20%;
+	margin:0;
+	padding:0;
+	left:0;
+	top:60%;
+
+	transition:all 0.5s ease;
+
+	}
+
+	ul.aside-menu-list{
+	width:100%;
+	position:relative;
+	display:flex;
+	padding:1px;
+	flex-direction:row;
+	justify-content:center;
+	text-align:center;/*가운데 정렬*/
+	margin:5px;
+		transition:all 0.5s ease;
+	}
+	
+	ul.aside-menu-list li{
+	display:block;
+	transition: all 0.3s ease;
+	flex-direction:column;
+	position:relative;
+	list-style:none;
+	font-size:7px;
+	font-family:고딕;
+	margin:0px;
+	text-align:center;/*가운데 정렬*/
+	width:100%;
+	height:40vh;
+	justify-content:center;
+	margin-bottom:3rem;
+	padding-top:5%;
+			transition:all 0.5s ease;
+	
+	
+	}
+	ul.aside-menu-list li a {
+	text-decoration:none;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	text-align:left;/*가운데 정렬*/
+	font-size:0.8rem;
+	font-family:고딕;
+	text-align:center;
+	margin-top:20px;
+	padding:0;
+	}
+	ul.aside-menu-list li a .aside-content{
+		width:100%;
+			color:#ffffff;
+		 transition: all 0.5s ease;
+		  z-index: 2;
+	}
+	ul.aside-menu-list li a  span{
+		font-weight:border;
+		text-align:center;
+	font-size:1.25rem;
+		font-weight:500;
+		margin-bottom:15px;
+	
+	}
+		ul.aside-menu-list li:nth-child(1) a .fa{
+	color:#9bdc28;
+	font-size :10vw;
+	margin-bottom:3vw;
+}
+	ul.aside-menu-list li:nth-child(2) a .fa{
+	color: red;
+	font-size :10vw;
+	margin-bottom:3vw;
+}
+	ul.aside-menu-list li:nth-child(3) a .fa{
+	color: #2196f3;
+	font-size :10vw;
+	margin-bottom:3vw;
+}
+
+	ul.aside-menu-list li:nth-child(1) a:after{
+	content:'';
+}
+	ul.aside-menu-list li:nth-child(2) a:after{
+	content:'';
+}
+	ul.aside-menu-list li:nth-child(3) a:after{	
+	content:'';
+}
+	ul.aside-menu-list li a:hover:after{
+	content:'';
+	
+}
 }
 
 
