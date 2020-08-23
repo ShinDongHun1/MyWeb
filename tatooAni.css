@@ -33,15 +33,16 @@ input[id="menuicon"]+label span{
 	background:rgba(0, 0, 0, 0.7);
 	 transition: all 0.5s ease;
 }
-@media all and (max-width:767px){/*모바일* 320~480이나 그사이도 하려고*/
-input[id="menuicon"]+label span{
+
+@media all and (max-width : 1024px) {/*아이패드*/
+	input[id="menuicon"]+label span{
 
 	background:lightgray;
 
 }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {/*아이패드*/
-	input[id="menuicon"]+label span{
+@media all and (max-width:767px){/*모바일* 320~480이나 그사이도 하려고*/
+input[id="menuicon"]+label span{
 
 	background:lightgray;
 
@@ -87,7 +88,7 @@ input[id="menuicon"]:checked +label ~ .main-section{
 input[id="menuicon"]:checked +label ~ .aside-menu{
   left:0;
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {/*아이패드*/
+@media all and (max-width : 1024px) {/*아이패드*/
 	input[id="menuicon"]:checked +label ~ .main-section{
   left:0;
   
