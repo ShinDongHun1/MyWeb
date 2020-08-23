@@ -206,25 +206,33 @@ transition:all 0.5s ease;
 
 	}
 }
-.nav-footer-box{
-	
-	bottom:16%;
+.nav-footer .sns-box{
+	position:absolute;
+	bottom:20%;
 	padding-left:18%;
 	font-size:0.9vw;
 	   font-family: Arial;
-	margin-top:20%;
 	margin-bottom:10%;
 	display:block;
 	box-sizing:border-box;
 	overflow:visible;
 }
 @media all and (min-width : 768px)  and (max-width : 1024px) {/*아이패드*/
-	.nav-footer-box{
+	.nav-footer .sns-box{
+	position:absolute;
+		bottom:3%;
 		display:block;
-
+		margin-top:10%;
 	font-size:1.5vw;
-		bottom:10%;
+
 	   font-family: Arial;
+
+}
+	
+}
+@media all and (max-width:767px){/*모바일* 320~480이나 그사이도 하려고*/
+	.nav-footer .sns-box{
+	display:none;
 
 }
 	
@@ -698,5 +706,21 @@ ul.aside-menu-list li a:hover:after{
 	
 }
 
+}
+.main-footer .sns-box{
+	display:none;
+}
+@media all and (max-width:767px){/*모바일* 320~480이나 그사이도 하려고*/
+	.main-footer .sns-box{
+	display:block;
+			bottom:3%;
+		display:block;
+		margin:10%;
+	font-size:3vw;
+
+	   font-family: Arial;
+		text-align:center;
+		
+}
 }
 
