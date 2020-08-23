@@ -90,10 +90,21 @@ console.clear();
 
 
 
-
-
-
-function textFill(id){
-	let spanEl=document.getElementsById(id);
-	spanEl.style.color='black';
+function changeMenuColor(){
+	let aisdeBox=document.querySelector(".aside-menu");
+	const asideTop =aisdeBox.getBoundingClientRect().top;
+	let labelBox=document.querySelector(".checkIcon");
+	const labelTop =labelBox.getBoundingClientRect().top;
+	if(asideTop>labelTop){
+	const bars=document.querySelectorAll('input[id="menuicon"]+label span');
+	bars.forEach(bar=>{
+		bar.style.background='white';
+	})
+	}else{
+			const bars=document.querySelectorAll('input[id="menuicon"]+label span');
+	bars.forEach(bar=>{
+		bar.style.background='black';
+	})
+	}
 }
+window.addEventListener('scroll', changeMenuColor );

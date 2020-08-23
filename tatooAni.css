@@ -33,6 +33,13 @@ input[id="menuicon"]+label span{
 	background:rgba(0, 0, 0, 0.7);
 	 transition: all 0.5s ease;
 }
+@media all and (max-width:479px){/*모바일*/
+input[id="menuicon"]+label span{
+
+	background:lightgray;
+
+}
+}
 input[id="menuicon"]+label span:nth-child(1){
 	top:0;
 }
@@ -67,9 +74,11 @@ input[id="menuicon"]:checked ~ nav{
 }
 
 input[id="menuicon"]:checked +label ~ .main-section{
-  left:50%;
+  left:55%;
   
 }
-
+input[id="menuicon"]:checked +label ~ .aside-menu{
+  left:55%;
+}
 
 
