@@ -51,8 +51,6 @@ body{
 		flex-direction:column;
 		justify-content: center;
 		transition: all 0.5s ease;
-		background-image: url(tata.jpg);
-		background-size:cover;
 	
 		}
 	
@@ -87,18 +85,16 @@ transition:all 0.5s ease;
 }
 @media all and (max-width:479px){/*모바일*/
 	#main-img{
-		/*position:relative;
+		position:relative;
 	width:100%;
 	height:100%;
 	object-fit:cover;
 	display:block;
 	margin:0 auto;
-		transition:all 0.5s ease;*/
-		display:none;
 		transition:all 0.5s ease;
 }
 	.main-section:after{
-		background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+	background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
     content: ' ';
     display: block;
     height: 100%;
@@ -107,7 +103,7 @@ transition:all 0.5s ease;
     top: 0;
 	left:0;
     width: 100%;
-	transition:all 0.5 ease;
+	transition:all 0.6 ease;
     z-index: 1;
 	}
 
