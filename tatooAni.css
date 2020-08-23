@@ -80,22 +80,23 @@ input[id="menuicon"]:checked+label span:nth-child(3){
 input[id="menuicon"]:checked ~ nav{
 	left:0;
 }
-
+/*
 input[id="menuicon"]:checked +label ~ .main-section{
   left:0;
   
 }
 input[id="menuicon"]:checked +label ~ .aside-menu{
   left:0;
-}
+}*/
+
 @media all and (max-width : 1024px) {/*아이패드*/
-	input[id="menuicon"]:checked +label ~ .main-section{
+/*	input[id="menuicon"]:checked +label ~ .main-section{
   left:0;
   
 }
 	input[id="menuicon"]:checked +label ~ .aside-menu{
   left:0;
-}
+}*/
 }
 
 
