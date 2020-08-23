@@ -712,12 +712,11 @@ ul.aside-menu-list li a:hover:after{
 }
 @media all and (max-width:767px){/*모바일* 320~480이나 그사이도 하려고*/
 	.main-footer .sns-box{
-	display:block;
-			bottom:3%;
+		display:block;
+
 		display:block;
 		margin:10%;
-	font-size:3vw;
-
+		font-size:3vw;
 	   font-family: Arial;
 		text-align:center;
 		
