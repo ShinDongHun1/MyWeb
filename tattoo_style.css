@@ -120,14 +120,14 @@ body{
 		font-weight: 200;
 		text-align: center;
 	position: absolute;
-	top: 30%;
+	top: 40%;
 	left: 50%;
 	transform: translate( -50%, -50% );
 		font-family: Arial,sans-serif;
 		display:block;
 		color:#ffffff;
 		 transition: all 0.5s ease;
-
+		  z-index: 2;
 		 font-size: 5rem;
         margin-bottom: 0.5rem;
         padding-bottom: 0;
@@ -235,6 +235,8 @@ transition:all 0.5s ease;
     transition: all 0.5s ease;
     overflow-y: hidden;
 	border-right: 1px solid #e6e6e6;
+	background:white;
+	z-index:2;
 	}
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {/*아이패드*/

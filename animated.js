@@ -98,7 +98,7 @@ function changeMenuColor(){
 	if(asideTop>labelTop){
 	const bars=document.querySelectorAll('input[id="menuicon"]+label span');
 	bars.forEach(bar=>{
-		bar.style.background='white';
+		bar.style.background='lightgray';
 	})
 	}else{
 			const bars=document.querySelectorAll('input[id="menuicon"]+label span');
