@@ -754,6 +754,7 @@ ul.aside-menu-list li a:hover:after{
 }
 
 .search-btn{
+		border:none;
 	color:#ce1b28;
 	float:right;
 	width:20px;
@@ -781,15 +782,19 @@ ul.aside-menu-list li a:hover:after{
 		color:black;
 
 	}
+	.search-txt:focus{
+	width:120px;
+	font-size:0.8vw;
+		color:black;
+
+	}
 
 
 .search-btn{
 	color:black;
 background:lightgray;
+	border:none;
 }
-.search-box:hover > .search-btn{
-	background:lightgray;
-	
-}
+
 	
 }

@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<script src="animated.js"></script>
-		
+	
 		<input type="checkbox" id="menuicon">
 				<label for="menuicon" class="checkIcon">
 					<span></span>
@@ -20,10 +20,10 @@
 				</label>
 		<header>
 		<div class="search-box">
-			<input class ="search-txt" type="text" name="" placeholder="Type to search">
-			<a class="search-btn" href="#">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
+			<input class ="search-txt"  onblur="closeSearchText()" type="text" name="" placeholder="Type to search">
+			<button class="search-btn" onclick="openSearchText()"><i class="fa fa-search" aria-hidden="true"></i></button>
+			
+			
 		</div>
 		</header>
 		
