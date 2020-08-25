@@ -690,6 +690,7 @@ ul.aside-menu-list li a:hover:after{
 		color: #858585;
 		font-size: 1.7em;
     line-height: 1.5em;
+		
 
 	
 	}
@@ -764,12 +765,12 @@ ul.aside-menu-list li a:hover:after{
 	transition: 0.4s;
 	line-height:20px;
 	width:0px;
-}
+}/*
 .search-box:hover > .search-txt{
 	width:120px;
 	padding:0, 6px;
 }
-
+*/
 .search-btn{
 		border:none;
 	color:#ce1b28;
@@ -784,11 +785,12 @@ ul.aside-menu-list li a:hover:after{
 	text-decoration:none;
 	transition:0.8s;
 	
-}
+}/*
 .search-box:hover > .search-btn{
 	background:#222;
 	
 }
+*/
 @media all and (min-width:1025px) { /*1025 이상일때->pc*/
 	.search-box{
 	background:lightgray;

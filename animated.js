@@ -110,6 +110,7 @@ function changeMenuColor(){
 window.addEventListener('scroll', changeMenuColor );
 
 let searchTxt=document.getElementsByClassName("search-txt");
+
 function closeSearchText(){
 	searchTxt[0].style.width='0px';
 	
